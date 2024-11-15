@@ -5,3 +5,4 @@ repository:
   description: This component is responsible for provisioning a workspace for Amazon Managed Service for Prometheus, also known as Amazon Managed Prometheus (AMP)
   homepage: https://cloudposse.com/accelerate
   topics: terraform, terraform-component
+
