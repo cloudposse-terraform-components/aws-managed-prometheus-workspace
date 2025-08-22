@@ -11,7 +11,6 @@ This component is responsible for provisioning a workspace for Amazon Managed Se
 Amazon Managed Prometheus (AMP).
 
 This component is intended to be deployed alongside Grafana. For example, use our `managed-grafana/workspace` component.
-
 ## Usage
 
 **Stack Level**: Regional
@@ -34,7 +33,10 @@ components:
 ```
 
 <!-- prettier-ignore-start -->
-<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!-- prettier-ignore-end -->
+
+
+<!-- markdownlint-disable -->
 ## Requirements
 
 | Name | Version |
@@ -101,12 +103,17 @@ No resources.
 | <a name="output_workspace_endpoint"></a> [workspace\_endpoint](#output\_workspace\_endpoint) | The endpoint URL of this Amazon Managed Prometheus workspace |
 | <a name="output_workspace_id"></a> [workspace\_id](#output\_workspace\_id) | The ID of this Amazon Managed Prometheus workspace |
 | <a name="output_workspace_region"></a> [workspace\_region](#output\_workspace\_region) | The region where this workspace is deployed |
-<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
-<!-- prettier-ignore-end -->
+<!-- markdownlint-restore -->
+
+
 
 ## References
 
-- [cloudposse/terraform-aws-components](https://github.com/cloudposse/terraform-aws-components/tree/main/modules/managed-prometheus/workspace) -
-  Cloud Posse's upstream component
+
+- [cloudposse-terraform-components](https://github.com/orgs/cloudposse-terraform-components/repositories) - Cloud Posse's upstream component
+
+
+
 
 [<img src="https://cloudposse.com/logo-300x69.svg" height="32" align="right"/>](https://cpco.io/homepage?utm_source=github&utm_medium=readme&utm_campaign=cloudposse-terraform-components/aws-managed-prometheus-workspace&utm_content=)
+
