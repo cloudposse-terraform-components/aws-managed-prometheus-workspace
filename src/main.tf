@@ -8,7 +8,7 @@ locals {
 
 module "managed_prometheus" {
   source  = "cloudposse/managed-prometheus/aws"
-  version = "0.1.1"
+  version = "0.1.2"
 
   enabled = local.enabled
 
