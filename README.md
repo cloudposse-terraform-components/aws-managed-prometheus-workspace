@@ -106,7 +106,7 @@ No providers.
 |------|--------|---------|
 | <a name="module_account_map"></a> [account\_map](#module\_account\_map) | cloudposse/stack-config/yaml//modules/remote-state | 1.8.0 |
 | <a name="module_iam_roles"></a> [iam\_roles](#module\_iam\_roles) | ../../account-map/modules/iam-roles | n/a |
-| <a name="module_managed_prometheus"></a> [managed\_prometheus](#module\_managed\_prometheus) | cloudposse/managed-prometheus/aws | 0.1.2 |
+| <a name="module_managed_prometheus"></a> [managed\_prometheus](#module\_managed\_prometheus) | cloudposse/managed-prometheus/aws | 1.0.0 |
 | <a name="module_this"></a> [this](#module\_this) | cloudposse/label/null | 0.25.0 |
 | <a name="module_vpc"></a> [vpc](#module\_vpc) | cloudposse/stack-config/yaml//modules/remote-state | 1.8.0 |
 
