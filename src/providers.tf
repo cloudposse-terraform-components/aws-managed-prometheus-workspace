@@ -17,3 +17,48 @@ module "iam_roles" {
   source  = "../../account-map/modules/iam-roles"
   context = module.this.context
 }
+
+variable "account_map_enabled" {
+  type        = bool
+  description = <<-EOT
+    When true, uses the account-map component to look up account IDs dynamically.
+    When false, uses the static account_map variable instead. Set to false when
+    using static account mappings without the account-map component.
+  EOT
+  default     = true
+}
+
+variable "account_map" {
+  type = object({
+    full_account_map           = map(string)
+    audit_account_account_name = optional(string, "")
+    root_account_account_name  = optional(string, "")
+  })
+  description = <<-EOT
+    Static account map used when account_map_enabled is false.
+    Provides account name to account ID mapping without requiring the account-map component.
+  EOT
+  default = {
+    full_account_map           = {}
+    audit_account_account_name = ""
+    root_account_account_name  = ""
+  }
+}
+
+variable "account_map_tenant" {
+  type        = string
+  description = "The name of the tenant where `account_map` is provisioned"
+  default     = "core"
+}
+
+variable "account_map_environment" {
+  type        = string
+  description = "The name of the environment where `account_map` is provisioned"
+  default     = "gbl"
+}
+
+variable "account_map_stage" {
+  type        = string
+  description = "The name of the stage where `account_map` is provisioned"
+  default     = "root"
+}
