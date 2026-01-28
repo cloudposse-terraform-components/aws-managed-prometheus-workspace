@@ -44,21 +44,3 @@ variable "account_map" {
     root_account_account_name  = ""
   }
 }
-
-variable "account_map_tenant" {
-  type        = string
-  description = "The name of the tenant where `account_map` is provisioned"
-  default     = "core"
-}
-
-variable "account_map_environment" {
-  type        = string
-  description = "The name of the environment where `account_map` is provisioned"
-  default     = "gbl"
-}
-
-variable "account_map_stage" {
-  type        = string
-  description = "The name of the stage where `account_map` is provisioned"
-  default     = "root"
-}
