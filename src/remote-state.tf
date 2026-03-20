@@ -1,6 +1,6 @@
 module "account_map" {
   source  = "cloudposse/stack-config/yaml//modules/remote-state"
-  version = "1.8.0"
+  version = "2.0.0"
 
   component   = "account-map"
   tenant      = var.account_map_enabled ? coalesce(var.account_map_tenant, module.this.tenant) : null
@@ -16,7 +16,7 @@ module "account_map" {
 
 module "vpc" {
   source  = "cloudposse/stack-config/yaml//modules/remote-state"
-  version = "1.8.0"
+  version = "2.0.0"
 
   count = local.vpc_endpoint_enabled ? 1 : 0
 
